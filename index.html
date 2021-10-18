@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Cine Bosco</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Cine Bosco - Películas disponibles</h1>
+        </header>
+        <section>
+            <article id="test">
+                <div id="info"></div>
+            </article>
+        </section>
+        <ul>
+            <li>
+                <label for="ticket">Cantidad de Tickets:</label>
+                <input type="number" name="ticket" id="ticket" placeholder="(Cantidad de Tickets)" />
+            </li>
+            <li>
+                <label for="horarios">No. de Horario</label>
+                <input type="horarios" name="horarios" id="horarios" placeholder="(No. de Horario)" />
+            </li>
+            <li>
+                <input type="button" id="buy" value="Comprar" onclick="Javascript:buy()">
+                <input type="button" id="bill" value="Factura" onclick="Javascript:bill()">
+            </li>
+        </ul>
+        <script src="js/peliculas.js"></script>
+    </div>
+</body>
+
+</html>
