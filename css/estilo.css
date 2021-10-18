@@ -4,10 +4,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #0093E9;    
 }
 
 
@@ -22,15 +19,31 @@ h1{
     font-size: 2.5rem;
     margin-top: 2%;
 }
+article, .content{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
 
-/*Grid*/
+/*contenido*/
+.imagen{
+    position: relative;
+    width: 200px;
+    margin: 0%;
+}
 img{
     display: inline-block;
     position: relative;
     width: 200px;
+    height: 300px;
 }
 ul{
     width: auto;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 ul.grid li {
     display: inline-block;
@@ -39,21 +52,22 @@ ul.grid li {
 }
 
 ul.grid li h4 {
-	color: Brown;
-	font: Bold 0.9em "LatoSemibold",Verdana,Helvetica,"Liberation Sans";
+	color: rgb(255, 0, 0);
+	font: Bold 1.2em "LatoSemibold",Verdana,Helvetica,"Liberation Sans";
 	text-align: center;
+    padding: 15px;
 }
 
 ul.grid li p {
-	color: #393639;
-	font: Normal 0.8em "LatoRegular",Verdana,Helvetica,"Liberation Sans";
+	color: #000000;
+	font: Normal 1em "LatoRegular",Verdana,Helvetica,"Liberation Sans";
     margin: 0 9px;
 	text-align: left;
 }
 
 ul.grid li img.avatar {
 	background: #F9FCF9;
-	border: solid 1px #B99F9F;
+	border: solid 1px #ffffff;
 	margin: 6px 7px;
 	padding: 6px;
     width: 50px;
@@ -61,21 +75,33 @@ ul.grid li img.avatar {
 
 ul.grid li img.avatar:hover {
 	border: solid 1px #CCC;
-	-moz-box-shadow: 1px 1px 5px #999;
+	-moz-box-shadow: 1px 1px 5px rgb(248, 248, 248);
 	-webkit-box-shadow: 1px 1px 5px #999;
     box-shadow: 1px 1px 5px #999;
 }
 
 .box {
 	position:relative;
-	width: 168px;	
-	margin: 16px auto;
+	width: 168px;
+	/* margin: 16px auto; */
 }
 
 .box-gradient {
-    background: rgba(226,226,226,1);
-  
+    background: rgb(255, 255, 255);
+    height: 300px;
 }
 
 
+.tickets{    
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;    
+    padding: 10px;
+}
 
+.tickets li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
+}
